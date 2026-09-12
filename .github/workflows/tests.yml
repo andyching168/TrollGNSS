@@ -8,7 +8,7 @@ jobs:
   swift-tests:
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Test NMEA parser and injection adapter
         run: swift test --package-path Packages/NMEACore
       - name: Test vendored TrollUSBHostKit
