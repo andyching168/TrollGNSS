@@ -1,0 +1,15 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  swift-tests:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test NMEA parser and injection adapter
+        run: swift test --package-path Packages/NMEACore
+      - name: Test vendored TrollUSBHostKit
+        run: swift test --package-path Vendor/TrollUSBHostKit

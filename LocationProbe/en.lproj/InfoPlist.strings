@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "Location Probe";
+"NSLocationWhenInUseUsageDescription" = "Independently verify the CoreLocation data received by other apps.";

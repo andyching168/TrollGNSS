@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "定位觀察器";
+"NSLocationWhenInUseUsageDescription" = "獨立驗證其他 App 收到的 CoreLocation 定位資料。";

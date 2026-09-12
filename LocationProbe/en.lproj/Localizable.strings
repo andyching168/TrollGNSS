@@ -1,0 +1,3 @@
+"probe.instructions" = "Tap Start Observing and allow location access. This app has no injection entitlement or private API.";
+"開始觀察" = "Start Observing";
+"紀錄位於 Documents/locations.jsonl；此測試 App 不提供系統注入。" = "Logs are stored in Documents/locations.jsonl. This test app does not inject system location.";

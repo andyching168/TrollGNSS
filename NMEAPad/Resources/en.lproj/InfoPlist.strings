@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "TrollGNSS";
+"NSLocationWhenInUseUsageDescription" = "Observe system location output and keep external GNSS running during navigation.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Continue reading external GNSS and providing system location while a navigation app is in front.";

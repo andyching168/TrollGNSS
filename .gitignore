@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+DerivedData/
+dist/
+*.xcuserstate
+xcuserdata/
+docs/evidence/
+Vendor/TrollUSBHostKit/.harness/
+Vendor/TrollUSBHostKit/AGENTS.md
+Vendor/TrollUSBHostKit/CLAUDE.md
+Vendor/TrollUSBHostKit/PRD.md

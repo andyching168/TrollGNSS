@@ -1,0 +1,3 @@
+"probe.instructions" = "按開始，允許定位。本 App 不含注入 entitlement 或 private API。";
+"開始觀察" = "開始觀察";
+"紀錄位於 Documents/locations.jsonl；此測試 App 不提供系統注入。" = "紀錄位於 Documents/locations.jsonl；此測試 App 不提供系統注入。";

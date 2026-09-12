@@ -1,0 +1,53 @@
+name: NMEAPad
+options:
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    CURRENT_PROJECT_VERSION: "14"
+    MARKETING_VERSION: "0.1.0"
+    GCC_PREPROCESSOR_DEFINITIONS: "$(inherited) DEBUG=1"
+    CODE_SIGNING_ALLOWED: "NO"
+    CODE_SIGNING_REQUIRED: "NO"
+packages:
+  TrollUSBHostKit:
+    path: Vendor/TrollUSBHostKit
+  NMEACore:
+    path: Packages/NMEACore
+targets:
+  LocationProbe:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: LocationProbe
+        excludes: [Info.plist, entitlements.plist]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.andyching.LocationProbe
+        INFOPLIST_FILE: LocationProbe/Info.plist
+        TARGETED_DEVICE_FAMILY: "2"
+  NMEAPad:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: NMEAPad/Sources
+      - path: NMEAPad/Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_NAME: NMEAPad
+        SWIFT_OBJC_BRIDGING_HEADER: NMEAPad/Sources/NMEAPad-Bridging-Header.h
+        PRODUCT_BUNDLE_IDENTIFIER: com.andyching.NMEAPad
+        INFOPLIST_FILE: NMEAPad/Info.plist
+        CODE_SIGN_ENTITLEMENTS: NMEAPad/NMEAPad.entitlements
+        TARGETED_DEVICE_FAMILY: "2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        SUPPORTS_MACCATALYST: "NO"
+    dependencies:
+      - package: TrollUSBHostKit
+        product: USBHostKit
+      - package: NMEACore

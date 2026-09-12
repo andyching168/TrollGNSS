@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0332668F344947947DD8FF20 /* NMEACore in Frameworks */ = {isa = PBXBuildFile; productRef = BC203491E64B6DE228B21ACC /* NMEACore */; };
+		0AD8A5B520D24FCE45D825D8 /* LocationSimulationBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3955720BAD64B512F295FEF9 /* LocationSimulationBridge.m */; };
+		55FFED7B92A90E7A63990B4D /* SystemLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1026606F326C47B88AACB /* SystemLocationView.swift */; };
+		5E1034EE5E8C60E60432A48A /* SatellitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943002C73467EC918D3BECAF /* SatellitesView.swift */; };
+		6866B583C1C41067543E5BF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98427D4BD942B46E73C04F2D /* Localizable.strings */; };
+		70ACB7E7BCA8246C1C1CACD9 /* RawAndDeviceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171911506855CAA0015DFA1 /* RawAndDeviceViews.swift */; };
+		7961E6ADD4071F6FF3A3C88C /* NMEAPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8677B93201E8FFF4ED5FF11 /* NMEAPadApp.swift */; };
+		7E9BF596747802D225B7AD80 /* SystemLocationInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF22E59745B265957AEC67E /* SystemLocationInjector.swift */; };
+		82620047F9B551A2D22FC3D7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E0D91388458A2950B0FB42 /* RootView.swift */; };
+		9AD5F82C9A710EF9A2ECC05B /* LocationProbeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B329ADE46C1BB81612E9C1 /* LocationProbeApp.swift */; };
+		9CAA75412E604B3BCD7115DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6453FC21442B384947E6E650 /* Localizable.strings */; };
+		A5A4B127448388EA3E1F4B68 /* USBHostKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6D92A6BB51A81DD6739CE6C /* USBHostKit */; };
+		AD4CA72FEE62DA660F3C8995 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8434FA05CC43DEBC62E573D /* L10n.swift */; };
+		BCB5E81DA5457A14B097BAD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05218E868DE5BD2901F14EA3 /* InfoPlist.strings */; };
+		CE12DB0D52BB5B96A2A4BDC5 /* USBSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5341F625375FFD7FE9E6B /* USBSerial.swift */; };
+		E603839696D52FC182DDB2FD /* GPSAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02FB9575564E5486C6A9C52 /* GPSAppModel.swift */; };
+		F688CCFB8D8B843D7E079ACF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED3CD1155BE18C2FCD211381 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11BAA1FC37D83468CFCCA498 /* LocationSimulationBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationSimulationBridge.h; sourceTree = "<group>"; };
+		31B329ADE46C1BB81612E9C1 /* LocationProbeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProbeApp.swift; sourceTree = "<group>"; };
+		35FA6C2707B9A5ACB920D702 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3955720BAD64B512F295FEF9 /* LocationSimulationBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationSimulationBridge.m; sourceTree = "<group>"; };
+		44B1026606F326C47B88AACB /* SystemLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLocationView.swift; sourceTree = "<group>"; };
+		4A6979CBD3E2F21D2B328D94 /* NMEAPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMEAPad-Bridging-Header.h"; sourceTree = "<group>"; };
+		4CC00F53A3548240FD378717 /* NMEAPad.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = NMEAPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2C75D17D315C3CDEE61A97 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		586B209EC0395B7C202C4970 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		59DCEE547D9C8922BA135A0F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5AD5341F625375FFD7FE9E6B /* USBSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBSerial.swift; sourceTree = "<group>"; };
+		68E0D91388458A2950B0FB42 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		943002C73467EC918D3BECAF /* SatellitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatellitesView.swift; sourceTree = "<group>"; };
+		AAF22E59745B265957AEC67E /* SystemLocationInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLocationInjector.swift; sourceTree = "<group>"; };
+		B171911506855CAA0015DFA1 /* RawAndDeviceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawAndDeviceViews.swift; sourceTree = "<group>"; };
+		B667B15295DEC24CE6B7DA3E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B8E737715E8B3FF5CC49D8D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA86942CFEF142556E3E09D3 /* NMEACore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NMEACore; path = Packages/NMEACore; sourceTree = SOURCE_ROOT; };
+		C46F1BBED8F88C41F53B2EB4 /* LocationProbe.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LocationProbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91AF28B5C6FD33F2C845438 /* TrollUSBHostKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TrollUSBHostKit; path = Vendor/TrollUSBHostKit; sourceTree = SOURCE_ROOT; };
+		ECC88D6347332CA5A8F2FBBC /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F02FB9575564E5486C6A9C52 /* GPSAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSAppModel.swift; sourceTree = "<group>"; };
+		F4F13DF6E11FC0FD3FEE3AD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8434FA05CC43DEBC62E573D /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		F8677B93201E8FFF4ED5FF11 /* NMEAPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMEAPadApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A22F2F2C8FA06F2A12D3B6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4B127448388EA3E1F4B68 /* USBHostKit in Frameworks */,
+				0332668F344947947DD8FF20 /* NMEACore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0914F5A9BF27930E58061E56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46F1BBED8F88C41F53B2EB4 /* LocationProbe.app */,
+				4CC00F53A3548240FD378717 /* NMEAPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C6B68BE3A16551B04C60DD /* NMEAPad */ = {
+			isa = PBXGroup;
+			children = (
+				9039CA031D454846B435D3A0 /* Resources */,
+				E4E304A6EABCF3D31782E722 /* Sources */,
+			);
+			path = NMEAPad;
+			sourceTree = "<group>";
+		};
+		8FE6F03E56D301579C708B30 /* LocationProbe */ = {
+			isa = PBXGroup;
+			children = (
+				31B329ADE46C1BB81612E9C1 /* LocationProbeApp.swift */,
+				ED3CD1155BE18C2FCD211381 /* InfoPlist.strings */,
+				6453FC21442B384947E6E650 /* Localizable.strings */,
+			);
+			path = LocationProbe;
+			sourceTree = "<group>";
+		};
+		9039CA031D454846B435D3A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05218E868DE5BD2901F14EA3 /* InfoPlist.strings */,
+				98427D4BD942B46E73C04F2D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AE93E3D6B16EA7F6F226477 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BA86942CFEF142556E3E09D3 /* NMEACore */,
+				E91AF28B5C6FD33F2C845438 /* TrollUSBHostKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E24B78808159E7FDB9DD7366 = {
+			isa = PBXGroup;
+			children = (
+				8FE6F03E56D301579C708B30 /* LocationProbe */,
+				55C6B68BE3A16551B04C60DD /* NMEAPad */,
+				9AE93E3D6B16EA7F6F226477 /* Packages */,
+				0914F5A9BF27930E58061E56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4E304A6EABCF3D31782E722 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F02FB9575564E5486C6A9C52 /* GPSAppModel.swift */,
+				F8434FA05CC43DEBC62E573D /* L10n.swift */,
+				11BAA1FC37D83468CFCCA498 /* LocationSimulationBridge.h */,
+				3955720BAD64B512F295FEF9 /* LocationSimulationBridge.m */,
+				4A6979CBD3E2F21D2B328D94 /* NMEAPad-Bridging-Header.h */,
+				F8677B93201E8FFF4ED5FF11 /* NMEAPadApp.swift */,
+				B171911506855CAA0015DFA1 /* RawAndDeviceViews.swift */,
+				68E0D91388458A2950B0FB42 /* RootView.swift */,
+				943002C73467EC918D3BECAF /* SatellitesView.swift */,
+				AAF22E59745B265957AEC67E /* SystemLocationInjector.swift */,
+				44B1026606F326C47B88AACB /* SystemLocationView.swift */,
+				5AD5341F625375FFD7FE9E6B /* USBSerial.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F4779E9776501B6CFC4E4CD /* NMEAPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941547EB37D62062DDC90991 /* Build configuration list for PBXNativeTarget "NMEAPad" */;
+			buildPhases = (
+				94F73FF8A30A0AFCB0BBA233 /* Sources */,
+				A6BBC929ACFB42F9CFD1ED9F /* Resources */,
+				A22F2F2C8FA06F2A12D3B6A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMEAPad;
+			packageProductDependencies = (
+				F6D92A6BB51A81DD6739CE6C /* USBHostKit */,
+				BC203491E64B6DE228B21ACC /* NMEACore */,
+			);
+			productName = NMEAPad;
+			productReference = 4CC00F53A3548240FD378717 /* NMEAPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4732B42A1A971AA31CD0342F /* LocationProbe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F76FBB2D9E91D5CB94E2FF /* Build configuration list for PBXNativeTarget "LocationProbe" */;
+			buildPhases = (
+				9D4EFBF1F880993D5A1CA931 /* Sources */,
+				32454EF5093AFCA65D3D8C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationProbe;
+			packageProductDependencies = (
+			);
+			productName = LocationProbe;
+			productReference = C46F1BBED8F88C41F53B2EB4 /* LocationProbe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32C270122A7D6D09BB518184 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = F5BB883F333C2933813E5B64 /* Build configuration list for PBXProject "NMEAPad" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hant",
+			);
+			mainGroup = E24B78808159E7FDB9DD7366;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B75C54E91346252FD31E1442 /* XCLocalSwiftPackageReference "Packages/NMEACore" */,
+				0D9533058B5675A51CEDDB56 /* XCLocalSwiftPackageReference "Vendor/TrollUSBHostKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0914F5A9BF27930E58061E56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4732B42A1A971AA31CD0342F /* LocationProbe */,
+				1F4779E9776501B6CFC4E4CD /* NMEAPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32454EF5093AFCA65D3D8C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F688CCFB8D8B843D7E079ACF /* InfoPlist.strings in Resources */,
+				9CAA75412E604B3BCD7115DE /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BBC929ACFB42F9CFD1ED9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB5E81DA5457A14B097BAD1 /* InfoPlist.strings in Resources */,
+				6866B583C1C41067543E5BF2 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94F73FF8A30A0AFCB0BBA233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603839696D52FC182DDB2FD /* GPSAppModel.swift in Sources */,
+				AD4CA72FEE62DA660F3C8995 /* L10n.swift in Sources */,
+				0AD8A5B520D24FCE45D825D8 /* LocationSimulationBridge.m in Sources */,
+				7961E6ADD4071F6FF3A3C88C /* NMEAPadApp.swift in Sources */,
+				70ACB7E7BCA8246C1C1CACD9 /* RawAndDeviceViews.swift in Sources */,
+				82620047F9B551A2D22FC3D7 /* RootView.swift in Sources */,
+				5E1034EE5E8C60E60432A48A /* SatellitesView.swift in Sources */,
+				7E9BF596747802D225B7AD80 /* SystemLocationInjector.swift in Sources */,
+				55FFED7B92A90E7A63990B4D /* SystemLocationView.swift in Sources */,
+				CE12DB0D52BB5B96A2A4BDC5 /* USBSerial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D4EFBF1F880993D5A1CA931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD5F82C9A710EF9A2ECC05B /* LocationProbeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05218E868DE5BD2901F14EA3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				586B209EC0395B7C202C4970 /* en */,
+				4E2C75D17D315C3CDEE61A97 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6453FC21442B384947E6E650 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FA6C2707B9A5ACB920D702 /* en */,
+				ECC88D6347332CA5A8F2FBBC /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		98427D4BD942B46E73C04F2D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4F13DF6E11FC0FD3FEE3AD2 /* en */,
+				59DCEE547D9C8922BA135A0F /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		ED3CD1155BE18C2FCD211381 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8E737715E8B3FF5CC49D8D8 /* en */,
+				B667B15295DEC24CE6B7DA3E /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AAADA2BEDA9B429CDBABDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LocationProbe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyching.LocationProbe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		3D2CDF4CE9375EA5D586B571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = NMEAPad/NMEAPad.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NMEAPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyching.NMEAPad;
+				PRODUCT_NAME = NMEAPad;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "NMEAPad/Sources/NMEAPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		7E9D70509F673064650587AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 14;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		8B49B74CC7198830C3646C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 14;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited) DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		99F959E412C95BC803DAE7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = NMEAPad/NMEAPad.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = NMEAPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyching.NMEAPad;
+				PRODUCT_NAME = NMEAPad;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "NMEAPad/Sources/NMEAPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F290F80D14C2A1C12D4FD4A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LocationProbe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andyching.LocationProbe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F76FBB2D9E91D5CB94E2FF /* Build configuration list for PBXNativeTarget "LocationProbe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F290F80D14C2A1C12D4FD4A7 /* Debug */,
+				2AAADA2BEDA9B429CDBABDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		941547EB37D62062DDC90991 /* Build configuration list for PBXNativeTarget "NMEAPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F959E412C95BC803DAE7B6 /* Debug */,
+				3D2CDF4CE9375EA5D586B571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F5BB883F333C2933813E5B64 /* Build configuration list for PBXProject "NMEAPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E9D70509F673064650587AD /* Debug */,
+				8B49B74CC7198830C3646C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0D9533058B5675A51CEDDB56 /* XCLocalSwiftPackageReference "Vendor/TrollUSBHostKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/TrollUSBHostKit;
+		};
+		B75C54E91346252FD31E1442 /* XCLocalSwiftPackageReference "Packages/NMEACore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/NMEACore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC203491E64B6DE228B21ACC /* NMEACore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NMEACore;
+		};
+		F6D92A6BB51A81DD6739CE6C /* USBHostKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = USBHostKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 32C270122A7D6D09BB518184 /* Project object */;
+}
